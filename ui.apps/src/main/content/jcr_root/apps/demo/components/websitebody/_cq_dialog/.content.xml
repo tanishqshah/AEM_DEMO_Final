@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Tabs"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[core.wcm.components.commons.editor.dialog.childreneditor.v1,core.wcm.components.tabs.v1.editor,task.body]"
+    helpPath="https://www.adobe.com/go/aem_cmp_tabs_v1"
+    trackingFeature="core-components:tabs:v1">
+    <content
+        granite:class="cmp-tabs__editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <regform
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Registration Form"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <name
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Name"
+                                                fieldLabel="name"
+                                                name="./field1name"
+                                                value=""/>
+                                            <address
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter address"
+                                                fieldLabel="address"
+                                                name="./field1address"
+                                                value=""/>
+                                            <email
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Email"
+                                                fieldLabel="email"
+                                                name="./field1email"
+                                                validation="emailvalidate"
+                                                value=""/>
+                                            <age
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Age"
+                                                fieldLabel="age"
+                                                min="{Double}18.0"
+                                                name="./field1age"
+                                                value=""/>
+                                            <gender
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/radiogroup"
+                                                text="Gender">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <Male
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/radio"
+                                                        name="./fieldgender"
+                                                        text="Male "
+                                                        value="Male"/>
+                                                    <Female
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/radio"
+                                                        name="./fieldgender"
+                                                        text="Female"
+                                                        value="Female"/>
+                                                </items>
+                                            </gender>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </regform>
+                    <emiloan
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="emiloan"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <business
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Business name"
+                                                fieldLabel="Business Name"
+                                                name="./emibusiness"
+                                                value=""/>
+                                            <salary
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Salary"
+                                                fieldLabel="Salary"
+                                                name="./emisalary"
+                                                value=""/>
+                                            <loan
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Loan Amount"
+                                                fieldLabel="Amount"
+                                                name="./emiamount"
+                                                value=""/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </emiloan>
+                    <employee
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Employee Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <Name
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Emp name"
+                                                fieldLabel="Emp Name"
+                                                name="./empname"
+                                                value=""/>
+                                            <id
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Id"
+                                                fieldLabel="ID"
+                                                name="./empid"
+                                                value=""/>
+                                            <age
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Emp age"
+                                                fieldLabel="age"
+                                                name="./empage"
+                                                value=""/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </employee>
+                    <credit
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Credit Card"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <Adharno
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Adhar Number"
+                                                fieldLabel="Adhar Number"
+                                                name="./creditAdhar"
+                                                value=""/>
+                                            <panno
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Pan card id"
+                                                fieldLabel="PanID"
+                                                name="./creditpan"
+                                                value=""/>
+                                            <bank
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Bank"
+                                                fieldLabel="Bank"
+                                                name="./creditbank"
+                                                value=""/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </credit>
+                    <aemdeveloper
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="AemDeveloper"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <aemname1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter AEM Name 1"
+                                                fieldLabel="Name 1"
+                                                name="./aemname1"
+                                                value=""/>
+                                            <aemname2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter AEM Name 2"
+                                                fieldLabel="Name 2"
+                                                name="./aemname2"
+                                                value=""/>
+                                            <aemname3
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter AEM Name 3"
+                                                fieldLabel="Name 3"
+                                                name="./aemname3"
+                                                value=""/>
+                                            <aemname4
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter AEM Name 4"
+                                                fieldLabel="Name 4"
+                                                name="./aemname4"
+                                                value=""/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </aemdeveloper>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

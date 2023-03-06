@@ -1,0 +1,25 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.all @ categories='task.footer'}"></sly>
+</sly>
+
+
+
+<div class="footer">
+	<div class="footer-first">
+	<sly data-sly-list.firstLevel="${resource.listChildren}">
+		<sly data-sly-list.secondLevel="${firstLevel.listChildren}">
+            <div class="footer-col">
+                <h2 class="underline-small">
+                    ${secondLevel.multiFooterTitle}
+                </h2>
+                <sly data-sly-list.thirdLevel="${secondLevel.listChildren}">
+                    <sly data-sly-list.fourthLevel="${thirdLevel.listChildren}">
+                        <h3 class="ftr-childlnk">${fourthLevel.multiFieldsDesc}</h3>
+                    </sly>
+                </sly>
+            </div>
+		</sly>
+	</sly>
+	</div>
+    
+</div>

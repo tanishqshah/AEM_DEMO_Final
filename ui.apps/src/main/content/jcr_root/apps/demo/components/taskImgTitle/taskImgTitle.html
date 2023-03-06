@@ -1,0 +1,15 @@
+
+<sly data-sly-test="${properties.title}">
+<div align="${properties.align}">
+    <h1>${properties.title}</h1>
+    </div>
+</sly>
+<di v align="${properties.align == 'right' ? 'left' : 'right'}">
+<sly data-sly-test="${properties.image}">
+	<a href="${properties.redirect}">
+     <img src="${properties.image}" width="350">
+     </a>
+</sly>
+</div>
+
+

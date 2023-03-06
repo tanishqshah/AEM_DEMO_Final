@@ -1,0 +1,32 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+     <sly data-sly-call="${clientlib.all @ categories='task.category'}"></sly>
+</sly>
+<sly data-sly-use.cat="com.aem.demo.core.models.Task2">
+     <div style="padding:20px 10px;">
+          <div style="background-color:black;">
+               <h2 style="text-align:center; padding-top:10px;">${cat.category}</h2>
+
+               <sly data-sly-list.firstLevel="${resource.listChildren}">
+                    <div class="card">
+                         <sly data-sly-list.secondLevel="${cat.multi}">
+
+                              <figure class="snip1418">
+                                   <img src="${secondLevel.productimage}" alt="Img">
+                                   <div class="add-to-cart"> <i class="ion-android-add"></i><span>Add to Cart</span>
+                                   </div>
+                                   <figcaption>
+                                        <h1>${secondLevel.productname}</h1>
+                                        <p>${secondLevel.productdesc}</p>
+                                        <div class="price">
+                                             <s>${secondLevel.productprice}</s>${secondLevel.productprice}
+                                        </div>
+                                   </figcaption><a href="#"></a>
+
+                              </figure>
+
+                         </sly>
+                    </div>
+               </sly>
+          </div>
+     </div>
+</sly>

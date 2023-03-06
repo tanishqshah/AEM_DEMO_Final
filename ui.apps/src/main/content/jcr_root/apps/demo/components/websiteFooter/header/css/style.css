@@ -1,0 +1,48 @@
+.footer{
+
+ bottom:0;
+  position:relative;
+  width:100%;
+        background-color: black;
+}
+.footer-first {
+	display: flex;
+ 	justify-content: space-evenly;
+  flex-wrap:wrap;
+
+}
+
+h2{
+    color:azure;
+}
+
+
+h3{
+        color:white;
+        font-size:12px;
+    cursor:pointer;
+    }
+
+
+.underline-small{
+  display:inline-block;
+  position:relative;
+  
+}
+
+.underline-small::after{
+  content:'';
+  height:2px;
+  width:40%;
+  background:#f24432;
+  position:absolute;
+  left:0;
+  bottom:-5px;
+
+}
+
+
+.footer-col{
+	padding:20px 0px;
+}
+
