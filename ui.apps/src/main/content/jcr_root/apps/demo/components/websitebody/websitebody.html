@@ -1,7 +1,7 @@
 <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
     <sly data-sly-call="${clientlib.all @ categories='task.body'}"></sly>
 </sly>
-
+<sly data-sly-use.tab="com.aem.demo.core.models.TabComponent">
 <div style="margin-bottom:50px">
 <div class="tabs">
 
@@ -33,30 +33,30 @@
     </div>
     <div class="content">
         <section>
-            <label>Name : </label><sly>${properties.field1name}</sly><br>
-            <label>Address : </label><sly>${properties.field1address}</sly><br>
-            <label>Email : </label><sly>${properties.field1email}</sly><br>
-            <label>Age : </label><sly>${properties.field1age}</sly><br>
-            <label>Gender : </label><sly>${properties.fieldgender}</sly><br>
-
-
-        </section>
-        <section>
-			<label>EMPName : </label><sly>${properties.empname}</sly><br>
-            <label>EMPID : </label><sly>${properties.empid}</sly><br>
-            <label>EMPGender : </label><sly>${properties.empage}</sly><br>
+            <label>Name : </label><sly>${tab.field1name}</sly><br>
+            <label>Address : </label><sly>${tab.field1address}</sly><br>
+            <label>Email : </label><sly>${tab.field1email}</sly><br>
+            <label>Age : </label><sly>${tab.field1age}</sly><br>
+            <label>Gender : </label><sly>${tab.fieldgender}</sly><br>
 
         </section>
         <section>
-			<label>Business : </label><sly>${properties.emibusiness}</sly><br>
-            <label>Salary : </label><sly>${properties.emisalary}</sly><br>
-            <label>Amount : </label><sly>${properties.emiamount}</sly><br>
+			<label>EMPName : </label><sly>${tab.empname}</sly><br>
+            <label>EMPID : </label><sly>${tab.empid}</sly><br>
+            <label>EMPGender : </label><sly>${tab.empage}</sly><br>
+			
         </section>
         <section>
-            <label>AdharNumber : </label><sly>${properties.creditAdhar}</sly><br>
-            <label>PanNumber : </label><sly>${properties.creditpan}</sly><br>
-            <label>Bank : </label><sly>${properties.creditbank}</sly><br>
+			<label>Business : </label><sly>${tab.emibusiness}</sly><br>
+            <label>Salary : </label><sly>${tab.emisalary}</sly><br>
+            <label>Amount : </label><sly>${tab.emiamount}</sly><br>
+        </section>
+        <section>
+            <label>AdharNumber : </label><sly>${tab.creditAdhar}</sly><br>
+            <label>PanNumber : </label><sly>${tab.creditpan}</sly><br>
+            <label>Bank : </label><sly>${tab.creditbank}</sly><br>
         </section>
     </div>
 </div>
 </div>
+</sly>

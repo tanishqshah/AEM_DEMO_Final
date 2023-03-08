@@ -2,24 +2,24 @@
     <sly data-sly-call="${clientlib.all @ categories='task.footer'}"></sly>
 </sly>
 
+<sly data-sly-use.footer="com.aem.demo.core.models.TaskFooter">
+
 
 
 <div class="footer">
 	<div class="footer-first">
-	<sly data-sly-list.firstLevel="${resource.listChildren}">
-		<sly data-sly-list.secondLevel="${firstLevel.listChildren}">
+		<sly data-sly-list.secondLevel="${footer.multifooter}">
             <div class="footer-col">
                 <h2 class="underline-small">
                     ${secondLevel.multiFooterTitle}
                 </h2>
-                <sly data-sly-list.thirdLevel="${secondLevel.listChildren}">
-                    <sly data-sly-list.fourthLevel="${thirdLevel.listChildren}">
+                    <sly data-sly-list.fourthLevel="${secondLevel.multiFields}">
                         <h3 class="ftr-childlnk">${fourthLevel.multiFieldsDesc}</h3>
                     </sly>
-                </sly>
+
             </div>
-		</sly>
 	</sly>
 	</div>
     
 </div>
+</sly>
