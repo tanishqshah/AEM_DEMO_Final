@@ -24,7 +24,19 @@ public class Multi {
     @Default(values="")
     private String productimage;
 
-    
+    @ValueMapValue
+    @Default(values="")
+    private String val;
+
+    // price before discount 
+    public int getVal() {
+        int dis = Integer.parseInt(this.productprice) + Integer.parseInt(this.productprice) * 20 / 100;
+        return dis;
+    }
+
+   
+
+
     // Product Image 
     public String getProductimage() {
         return productimage;

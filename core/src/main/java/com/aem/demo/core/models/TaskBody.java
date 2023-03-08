@@ -11,7 +11,7 @@ import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import java.util.*;
 
 @Model(adaptables = Resource.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
-public class Task2 {
+public class TaskBody {
     
     @ValueMapValue
     @Default(values = "")
