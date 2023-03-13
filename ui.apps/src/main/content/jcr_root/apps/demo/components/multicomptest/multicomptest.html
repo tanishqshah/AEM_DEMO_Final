@@ -1,7 +1,7 @@
 <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
      <sly data-sly-call="${clientlib.all @ categories='task.category'}"></sly>
 </sly>
-<sly data-sly-use.cat="com.aem.demo.core.models.Task2">
+<sly data-sly-use.cat="com.aem.demo.core.models.TaskBody">
      <div style="padding:20px 10px;">
           <div style="background-color:black;">
                <h2 style="text-align:center; padding-top:10px;">${cat.category}</h2>
@@ -18,8 +18,9 @@
                                         <h1>${secondLevel.productname}</h1>
                                         <p>${secondLevel.productdesc}</p>
                                         <div class="price">
-                                             <s>RS ${secondLevel.productprice}</s>RS ${secondLevel.productprice}
+                                             <s id="dis">RS ${secondLevel.val}</s>RS ${secondLevel.productprice}
                                         </div>
+
                                    </figcaption><a href="#"></a>
 
                               </figure>
@@ -29,4 +30,4 @@
                </sly>
           </div>
      </div>
-</sly>
+</sly><script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
