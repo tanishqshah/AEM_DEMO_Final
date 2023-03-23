@@ -1,0 +1,48 @@
+{
+    "tab":{
+        "jcr:primaryType": "nt:unstructured",
+        "field1address": "GRAM MOHAMMADPURA BURHANPUR",
+        "jcr:createdBy": "admin",
+        "empname": "Tanishq shah",
+        "empage": "21",
+        "jcr:lastModifiedBy": "admin",
+        "field1email": "tanishq@gmail.com",
+        "creditbank": "HDFC",
+        "jcr:created": "Thu Mar 02 2023 16:50:01 GMT+0530",
+        "creditAdhar": "8873 7373 2121 4323",
+        "empid": "2000143",
+        "emiamount": "2L",
+        "field1name": "Tanishq shah",
+        "creditpan": "NKHJP6452S",
+        "emisalary": "12LPA",
+        "fieldgender": "Male",
+        "jcr:lastModified": "Fri Mar 03 2023 16:49:27 GMT+0530",
+        "sling:resourceType": "demo/components/websitebody",
+        "field1age": "20",
+        "emibusiness": "Grain Merchant"
+        },
+    "multiProduct":{
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+        "jcr:primaryType": "nt:unstructured",
+        "productdesc": "lorem ipsum",
+        "productname": "Samsung",
+        "productimage": "https://m.media-amazon.com/images/I/61VuVU94RnL._AC_UY436_FMwebp_QL65_.jpg",
+        "productprice": "20000"
+        },
+        "item1": {
+        "jcr:primaryType": "nt:unstructured",
+        "productdesc": "lorem ipsum",
+        "productname": "Samsung",
+        "productimage": "https://m.media-amazon.com/images/I/61VuVU94RnL._AC_UY436_FMwebp_QL65_.jpg",
+        "productprice": "20000"
+        },
+        "item2": {
+        "jcr:primaryType": "nt:unstructured",
+        "productdesc": "Lorem Ipsum",
+        "productname": "Oppo",
+        "productimage": "https://m.media-amazon.com/images/I/61VuVU94RnL._AC_UY436_FMwebp_QL65_.jpg",
+        "productprice": "15000"
+        }
+        }
+}

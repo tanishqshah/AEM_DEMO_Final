@@ -1,43 +1,43 @@
 
 package com.aem.demo.core.models;
 
+import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
-@Model(adaptables = Resource.class)
+import org.apache.sling.models.annotations.DefaultInjectionStrategy;
+
+@Model(adaptables = { Resource.class }, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class Multi {
     @ValueMapValue
-    @Default(values="")
+    @Default(values = "")
     private String productname;
 
     @ValueMapValue
-    @Default(values="")
+    @Default(values = "")
     private String productdesc;
 
     @ValueMapValue
-    @Default(values="")
+    @Default(values = "")
     private String productprice;
 
     @ValueMapValue
-    @Default(values="")
+    @Default(values = "")
     private String productimage;
 
     @ValueMapValue
-    @Default(values="")
+    @Default(values = "")
     private String val;
 
-    // price before discount 
+    // price before discount
     public int getVal() {
         int dis = Integer.parseInt(this.productprice) + Integer.parseInt(this.productprice) * 20 / 100;
         return dis;
     }
 
-   
-
-
-    // Product Image 
+    // Product Image
     public String getProductimage() {
         return productimage;
     }
@@ -55,7 +55,6 @@ public class Multi {
         this.productname = productname;
     }
 
-
     // Product description
     public String getProductdesc() {
         return productdesc;
@@ -64,8 +63,8 @@ public class Multi {
     public void setProductdesc(String productdesc) {
         this.productdesc = productdesc;
     }
-    
-    // Product Price 
+
+    // Product Price
     public String getProductprice() {
         return productprice;
     }
@@ -74,8 +73,4 @@ public class Multi {
         this.productprice = productprice;
     }
 
-
-    
-    
 }
-

@@ -1,5 +1,6 @@
 package com.aem.demo.core.models;
 
+import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.ChildResource;
@@ -10,9 +11,9 @@ import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 // import javax.inject.Inject;
 import java.util.*;
 
-@Model(adaptables = Resource.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
+@Model(adaptables = { SlingHttpServletRequest.class }, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class TaskBody {
-    
+
     @ValueMapValue
     @Default(values = "")
     private String category;

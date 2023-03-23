@@ -1,0 +1,35 @@
+{
+    "tab":{
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "admin",
+        "jcr:lastModifiedBy": "admin",
+        "jcr:created": "Sat Mar 04 2023 18:48:15 GMT+0530",
+        "category": "Electronics",
+        "jcr:lastModified": "Mon Mar 06 2023 10:18:34 GMT+0530",
+        "sling:resourceType": "demo/components/multicomptest",
+        "multi": {
+        "jcr:primaryType": "nt:unstructured",
+        "item0": {
+        "jcr:primaryType": "nt:unstructured",
+        "productdesc": "lorem ipsum",
+        "productname": "Samsung",
+        "productimage": "https://m.media-amazon.com/images/I/61VuVU94RnL._AC_UY436_FMwebp_QL65_.jpg",
+        "productprice": "20000"
+        },
+        "item1": {
+        "jcr:primaryType": "nt:unstructured",
+        "productdesc": "lorem ipsum",
+        "productname": "Samsung",
+        "productimage": "https://m.media-amazon.com/images/I/61VuVU94RnL._AC_UY436_FMwebp_QL65_.jpg",
+        "productprice": "20000"
+        },
+        "item2": {
+        "jcr:primaryType": "nt:unstructured",
+        "productdesc": "Lorem Ipsum",
+        "productname": "Oppo",
+        "productimage": "https://m.media-amazon.com/images/I/61VuVU94RnL._AC_UY436_FMwebp_QL65_.jpg",
+        "productprice": "15000"
+        }
+        }
+        }
+}

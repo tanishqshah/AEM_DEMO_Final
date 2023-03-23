@@ -1,0 +1,128 @@
+{
+    "footerinfo": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "admin",
+        "jcr:lastModifiedBy": "admin",
+        "jcr:created": "Thu Mar 02 2023 15:08:04 GMT+0530",
+        "jcr:lastModified": "Thu Mar 02 2023 15:11:26 GMT+0530",
+        "sling:resourceType": "demo/components/websiteFooter",
+        "multifooter": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+                "jcr:primaryType": "nt:unstructured",
+                "multiFooterTitle": "Mobiles",
+                "multiFields": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "item0": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "multiFieldsDesc": "xIOMI"
+                    },
+                    "item1": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "multiFieldsDesc": "Samsung"
+                    },
+                    "item2": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "multiFieldsDesc": "Oppo"
+                    },
+                    "item3": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "multiFieldsDesc": "Vivo"
+                    }
+                }
+            },
+            "item1": {
+                "jcr:primaryType": "nt:unstructured",
+                "multiFooterTitle": "Lifestyle & Fitness",
+                "multiFields": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "item0": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "multiFieldsDesc": "Mattress"
+                    },
+                    "item1": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "multiFieldsDesc": "Smartwatches"
+                    },
+                    "item2": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "multiFieldsDesc": "Bicycles"
+                    },
+                    "item3": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "multiFieldsDesc": "Camera"
+                    },
+                    "item4": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "multiFieldsDesc": "Speakers"
+                    }
+                }
+            },
+            "item2": {
+                "jcr:primaryType": "nt:unstructured",
+                "multiFooterTitle": "Loans",
+                "multiFields": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "item0": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "multiFieldsDesc": "Personal Loan"
+                    },
+                    "item1": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "multiFieldsDesc": "Business Loan"
+                    },
+                    "item2": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "multiFieldsDesc": "Loan for Doctor"
+                    },
+                    "item3": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "multiFieldsDesc": "Loan for CA"
+                    },
+                    "item4": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "multiFieldsDesc": "Gold Loan"
+                    }
+                }
+            },
+            "item3": {
+                "jcr:primaryType": "nt:unstructured",
+                "multiFooterTitle": "Calculators",
+                "multiFields": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "item0": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "multiFieldsDesc": "EMI Calculator"
+                    },
+                    "item1": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "multiFieldsDesc": "Eligibility Calculator"
+                    },
+                    "item2": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "multiFieldsDesc": "Business Calculator"
+                    },
+                    "item3": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "multiFieldsDesc": "Gold Calculator"
+                    },
+                    "item4": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "multiFieldsDesc": "Interest Calculator"
+                    }
+                }
+            },
+            "item4": {
+                "jcr:primaryType": "nt:unstructured",
+                "multiFooterTitle": "InvestMent",
+                "multiFields": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "item0": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "multiFieldsDesc": "Fixed Deposit"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -15,7 +15,10 @@ public class CustomComponentModel {
     @Inject
     @Default(values="")
     private String title;
-    public String getTitle(){
+
+    public String getTitle() {
         return title;
     }
+
+
 }
